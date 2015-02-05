@@ -17,7 +17,7 @@
     NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
 
     [NSTask ftg_runTaskWithLaunchPath:@"/usr/bin/open"
-                            arguments:@[@"-a", @"Terminal", projectFolderPath]];
+                            arguments:@[@"-F", @"-a", @"Terminal", projectFolderPath]];
 }
 
 @end
